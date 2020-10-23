@@ -1,0 +1,50 @@
+<button mat-button class="add" routerLink="/additeam">Add Inventory</button>
+
+<!-- <div *ngFor="let userdata of userdata">
+  <span>{{userdata.id}}</span>
+</div> -->
+
+<!--  -->
+<table class="iteamtable"  >
+  <tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let userdata of userdata;let i=index">
+    <td>{{i+1}}</td>
+    <td>{{userdata.name}}</td>
+    <td>{{userdata.description}}</td>
+    <td>{{userdata.price}}</td>
+    <td (click)="deletiteam(userdata)"><mat-icon >delete</mat-icon>
+    </td>
+
+
+
+  </tr>
+    <!-- <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> S.No </th>
+      <td mat-cell *matCellDef="let userdata"> {{userdata.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let userdata"> {{userdata.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef="let userdata"> {{userdata.description}} </td>
+    </ng-container>
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> Price </th>
+      <td mat-cell *matCellDef="let userdata"> {{userdata.price}} </td>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef> Delete </th>
+      <td mat-cell *matCellDef="let userdata"> hi </td>
+    </ng-container>
+    
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+     </table>

@@ -1,0 +1,68 @@
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+      <h3 class="headerapp">Please Provide iteam Details</h3>
+      </div></div>
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-3">
+                      <label>Iteam Name :</label></div>
+                      <div class="col-md-3">
+                      <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" /></div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-3"></div>
+                         <div class="col-md-6">
+                          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                          <div *ngIf="f.name.errors.required" style="color:red;"> Name is required</div>
+                          </div>
+                      </div>
+</div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-3"> 
+                      <label>Description :</label></div>
+                      <div class="col-md-3">
+                      <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" /></div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                      <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                          <div *ngIf="f.description.errors.required" style="color:red;">Please write description</div>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="row">
+                             <div class="col-md-3"> <label>Price :</label></div>
+                     <div class="col-md-3">  <input type="text" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }" /></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                      <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
+                          <div *ngIf="f.price.errors.required" style="color:red;">please enter iteam price</div>
+                     </div>
+                     </div>
+                      </div>
+                  </div>
+
+                  <div class="form-group" >
+                      <button class="btn btn-primary"  style="background-color: black;color:white">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+

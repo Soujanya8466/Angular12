@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Brush",
+      "description": "A toothbrush is an oral hygiene instrument used to clean the teeth, gums, and tongue.",
+      "price": "30"
+    },
+    {
+      "id": 2,
+      "name": "Toothpaste",
+      "description": "Toothpaste is used to promote oral hygiene: it is an abrasive that aids in removing dental plaque and food from the teeth.",
+      "price": "25"
+    },
+    {
+      "id": 3,
+      "name": "Towel",
+      "description": "A towel is a piece of absorbent fabric or paper used for drying or wiping a body or a surface",
+      "price": "100"
+    },
+    {
+      "id": 4,
+      "name": "Plate",
+      "description": "A plate is a broad, concave, but mainly flat vessel on which food can be served.",
+      "price": "220"
+    },
+    {
+      "id": 5,
+      "name": "Headset",
+      "description": "Headsets are widely used for telephone-intensive jobs, in particular by call centre workers.",
+      "price": "2000"
+    },
+    {
+      "id": 6,
+      "name": "Pen",
+      "description": "A pen is a common writing instrument used to apply ink to a surface, usually paper, for writing or drawing.",
+      "price": "5"
+    },
+    {
+      "id": 7,
+      "name": "Bag",
+      "description": "In the modern world, bags are ubiquitous, with many people routinely carrying a wide variety of them in the form of cloth or leather briefcases, handbags, and backpacks, and with bags made from more disposable materials such as paper or plastic being used for shopping, and to carry home groceries.",
+      "price": "500"
+    }
+  ]
+}

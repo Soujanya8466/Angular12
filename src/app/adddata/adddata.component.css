@@ -1,0 +1,19 @@
+.add{
+    background: #2196f394;
+    color: white;
+}
+.mat-elevation-z8{
+    width:100% !important;
+}
+.iteamtable{
+    border: 2px solid #00000029;
+    margin-top: 19px;
+}
+tr,th,td{
+    border: 1px solid #00000038  !important;
+}
+th{
+    background: #0000ff42;
+    color: white;
+}
+
